@@ -1,0 +1,28 @@
+@mixin list() {
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+$danger: red;
+$warning: yellow;
+$success: limegreen;
+
+@mixin background($color, $back) {
+	color: $color;
+	background-color: $back;
+}
+
+.form {
+	li {
+		@include list();
+	}
+	.danger {
+		@include background($danger, black);
+	}
+	.warning {
+		@include background($warning, black);
+	}
+	.success {
+		@include background($success, black);
+	}
+}

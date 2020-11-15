@@ -1,0 +1,20 @@
+%margin {
+	margin: 10px;
+}
+
+.register {
+
+	.danger {
+		color: red;
+	}
+	.warning {
+		color: yellow;
+	}
+	.success {
+		color: blue;
+	}
+	ul > li {
+		list-style: none;
+		@extend %margin;	
+	}
+}
